@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SVG Font controlled by js</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="./css/multi-line.css">
+    <style>
+      #draw_target {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ポインタの位置で変化するフォント</h1>
+      <a href="http://creator.dwango.co.jp/記事URL">&lt; 記事へ戻る</a>
+    </header>
+    <div class="control_area">
+      <h3>表示するテキストを入力（小文字の英字、幾つかの記号）</h3>
+      <textarea value="text" id="input_text"></textarea><br>
+      アセンダ<input type="range" id="ascender" value="50" step="1"><span id="ascender_value">--</span><br>
+      ディセンダ<input type="range" id="descender" value="50" step="1"><span id="descender_value">--</span><br>
+      水平方向のストローク太さ<input type="range" id="h_stroke_width" value="20" step="2"><span id="h_stroke_width_value">--</span><br>
+      垂直方向のストローク太さ<input type="range" id="v_stroke_width" value="20" step="2"><span id="v_stroke_width_value">--</span><br>
+      カーニング<input type="range" id="kerning" value="50" step="1">
+      <span id="kerning_value">--</span>
+    </div>
+    <div id="draw_target">
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/glyphs.js"></script>
+    <script src="./js/display.js"></script>
+    <script src="./js/control/show_input_realtime.js"></script>
+    <script src="./js/control/config_control.js"></script>
+  </body>
+</html>

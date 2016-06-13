@@ -1,0 +1,11 @@
+.control_area {
+  padding: 12px 0 12px 12px;
+}
+
+.control_area input {
+  margin: 4px 12px 0 12px;
+}
+
+#draw_target {
+  padding-left: 12px;
+}

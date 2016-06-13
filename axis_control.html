@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>SVG Font controlled by your Pointer</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/global.css">
+    <style>
+      html, body {
+        background: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>加速度センサで変化するフォント</h1>
+      <a href="http://creator.dwango.co.jp/記事URL">&lt; 記事へ戻る</a>
+    </header>
+    <span id="test_value" style="color: #fff;"></span>
+    <div id="draw_target">
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/glyphs.js"></script>
+    <script src="./js/display.js"></script>
+    <script src="./js/control/axis_control.js"></script>
+  </body>
+</html>

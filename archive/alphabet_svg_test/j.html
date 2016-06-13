@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SVGアルファベットテスト</title>
+  </head>
+  <body>
+    <svg width="120" height="360" viewport="0 0 120 120">
+      <defs>
+        <style type="text/css"><![CDATA[
+          .horizontal {
+            fill: red;
+          }
+          .vartical {
+            fill: blue;
+          }
+        ]]></style>
+      </defs>
+      <g class="horizontal">
+        <rect x="20" y="115" width="45" height="10" />
+      </g>
+      <g class="vartical">
+        <rect x="55" y="50" width="10" height="40" />
+        <rect x="55" y="115" width="10" height="125" />
+      </g>
+      <g class="slanting">
+        <polygon points="55 240 0 360 12.1353048993 360 65 246.875 65 240" />
+      </g>
+    </svg>
+  </body>
+</html>

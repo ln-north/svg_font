@@ -1,0 +1,19 @@
+header {
+  width: 100%;
+  min-width: 100%;
+  padding: 20px 0 20px 0;
+  background: rgb(0, 196, 204);
+  color: #444;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin: 0;
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+
+header a {
+  margin: 0;
+  padding-left: 8px;
+}

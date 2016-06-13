@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SVG Font controlled by js</title>
+  </head>
+  <body>
+    <div>
+      入力テキスト<input type="text" value="aaba" id="input_text">
+    </div>
+    <div>
+      アセンダ<input type="range" id="ascender" value="50" step="1"><br>
+      <span id="ascender_value">120</span>
+    </div> 
+     <div>
+      ディセンダ<input type="range" id="descender" value="50" step="1"><br>
+      <span id="descender_value">120</span>
+    </div>
+    <div>
+      水平方向のストローク太さ<input type="range" id="h_stroke_width" value="20" step="2"><br>
+      <span id="h_stroke_width_value">10</span>
+    </div>
+    <div>
+      垂直方向のストローク太さ<input type="range" id="v_stroke_width" value="20" step="2"><br>
+      <span id="v_stroke_width_value">10</span>
+    </div> 
+    <div>
+      カーニング<input type="range" id="kerning" value="50" step="1"><br>
+      <span id="kerning_value">120</span>
+    </div> 
+    <div id="draw_target">
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/display.js"></script>
+    <script src="./js/controller.js"></script>
+  </body>
+</html>
